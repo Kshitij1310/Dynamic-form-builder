@@ -3,7 +3,7 @@ import { getAllForms, deleteForm } from "../utils/storage";
 import { Link } from "react-router-dom";
 
 export default function MyForms() {
-  const [list, setList] = useState([]);
+  const [list, setList] = useState([]); //hooks autorelode usstare
   useEffect(() => {
     setList(getAllForms());
   }, []);

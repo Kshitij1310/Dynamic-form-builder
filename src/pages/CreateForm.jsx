@@ -39,9 +39,9 @@ export default function CreateForm() {
     }
     const id = uuid();
     const schema = { title: title.trim(), fields, _savedAt: Date.now() };
-    saveForm(id, schema);
+    saveForm(id, schema);     
     setMessage("Form saved! Go to My Forms to preview.");
-  }
+  }                                  
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
       <div className="lg:col-span-2">

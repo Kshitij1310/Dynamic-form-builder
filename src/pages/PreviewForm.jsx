@@ -5,8 +5,8 @@ import FieldRenderer from "../components/FieldRenderer";
 
 export default function PreviewForm() {
   const { id } = useParams();
-  const [schema, setSchema] = useState(null);
-  const [values, setValues] = useState({});
+  const [schema, setSchema] = useState(null);  
+  const [values, setValues] = useState({});   
   const [errors, setErrors] = useState({});
   const [message, setMessage] = useState("");
   const [showData, setShowData] = useState(false);
